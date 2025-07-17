@@ -5,6 +5,7 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
 [![TMDB API](https://img.shields.io/badge/TMDB_API-01D277?style=for-the-badge&logo=themoviedatabase&logoColor=white)](#)
 [![Responsive Design](https://img.shields.io/badge/Responsive-Design-00C896?style=for-the-badge)](#)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-ff69b4?style=for-the-badge&logo=github)](https://watmovies.netlify.app/)
 
 ---
 
@@ -104,23 +105,18 @@ movie-finder/
    - Skeleton loading states
    - Accessible form controls
 
----
-
-## 🚀 Getting Started
-
-1. Clone the repository
-2. Open `index.html` in your browser
-3. Start exploring movies!
-
-> Note: Requires an internet connection to access TMDB API
 
 ---
+🌐 Live Demo
+🔗 https://watmovies.netlify.app/
+---
+
 
 🧑‍💻 **Author**  
 [Your Name]  
 💻 Front-End Developer | Movie Enthusiast  
-🔗 [GitHub](https://github.com/yourusername)  
-🔗 [LinkedIn](https://linkedin.com/in/yourprofile)  
+🔗 [GitHub](https://github.com/SHASHWAT13244)  
+🔗 [LinkedIn](https://www.linkedin.com/in/shashwat-khandelwal-a0564532b/)  
 
 ---
 

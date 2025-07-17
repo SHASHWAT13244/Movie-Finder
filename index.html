@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Movie Finder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Movie Finder</h1>
+    <div class="controls">
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Search movies..."
+        aria-label="Search movies by title"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button id="voiceBtn" aria-label="Voice search" title="Voice Search">🎤</button>
+      <select id="genreFilter" aria-label="Filter by genre" aria-live="polite"></select>
+      <select id="yearFilter" aria-label="Filter by year" aria-live="polite"></select>
+      <select id="sortBy" aria-label="Sort by">
+        <option value="popularity.desc">Popular</option>
+        <option value="release_date.desc">Newest</option>
+        <option value="vote_average.desc">Top Rated</option>
+      </select>
+      <button id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle Dark/Light Mode">☀️</button>
+      <button id="viewFavoritesBtn" aria-label="View favorites">♥ Favorites</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="favoritesSection" class="hidden">
+      <h2>Your Favorite Movies</h2>
+      <div id="favoritesContainer" class="movies-grid" aria-live="polite"></div>
+      <button id="backToMainBtn" class="back-btn">← Back to All Movies</button>
+    </section>
+
+    <section id="mainContentSection">
+      <div class="pagination-controls">
+        <button id="prevPageBtn" disabled>Previous</button>
+        <span id="pageInfo">Page 1 of 1</span>
+        <button id="nextPageBtn" disabled>Next</button>
+      </div>
+      <section
+        id="moviesContainer"
+        aria-live="polite"
+        aria-busy="false"
+        class="movies-grid"
+        tabindex="0"
+      ></section>
+      <div class="pagination-controls">
+        <button id="prevPageBtnBottom" disabled>Previous</button>
+        <span id="pageInfoBottom">Page 1 of 1</span>
+        <button id="nextPageBtnBottom" disabled>Next</button>
+      </div>
+    </section>
+  </main>
+
+  <div
+    id="modal"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitle"
+    hidden
+  >
+    <div class="modal-content" tabindex="-1">
+      <button id="modalClose" aria-label="Close modal">&times;</button>
+      <div id="modalBody"></div>
+      <div id="trailerContainer" class="trailer-container"></div>
+    </div>
+  </div>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
